@@ -4,6 +4,37 @@
 
 **PY_File_Organizer** é um script em Python desenvolvido para organizar automaticamente arquivos em pastas separadas com base em suas extensões. Ele facilita o gerenciamento de arquivos ao categorizar diferentes tipos de mídia, documentos e outros formatos de arquivos, movendo-os para pastas específicas. 🚀
 
+## 📂 Diagrama de Lógica do PY_File_Organizer
+
+```mermaid
+graph TD
+    A[Iniciar Script] --> B[Listar arquivos no diretório atual]
+    B --> C{É um arquivo?}
+    C -- Sim --> D[Obter extensão do arquivo]
+    C -- Não --> B
+    D --> E{Extensão está na lista?}
+    E -- Sim --> F[Verificar se pasta de destino existe]
+    E -- Não --> B
+    F -- Não --> G[Criar pasta de destino]
+    F -- Sim --> H[Verificar se o arquivo já existe na pasta de destino]
+    G --> H
+    H -- Não --> I[Mover arquivo para a pasta de destino]
+    H -- Sim --> J[Ignorar o arquivo]
+    I --> B
+    J --> B
+    B --> K[Verificar arquivos não movidos]
+    K --> L{É um arquivo não movido?}
+    L -- Sim --> M[Obter extensão do arquivo]
+    L -- Não --> B
+    M --> N{Extensão está na lista?}
+    N -- Sim --> O[Verificar se pasta de duplicados existe]
+    N -- Não --> B
+    O -- Não --> P[Criar pasta de duplicados]
+    O -- Sim --> Q[Mover arquivo para a pasta de duplicados]
+    P --> Q
+    Q --> B
+
+
 ## 🌟 Motivações para Criar o Projeto PY_File_Organizer
 
 Eu criei o **PY_File_Organizer** por algumas razões principais:
