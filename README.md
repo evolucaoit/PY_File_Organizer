@@ -33,7 +33,7 @@ graph TD
     O -- Sim --> Q[Mover arquivo para a pasta de duplicados]
     P --> Q
     Q --> B
-
+```
 
 ## 🌟 Motivações para Criar o Projeto PY_File_Organizer
 
