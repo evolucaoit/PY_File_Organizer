@@ -42,44 +42,10 @@ Em resumo, o **PY_File_Organizer** nasceu da necessidade de organização, da bu
 📚 Extensões Suportadas
 O script atualmente suporta as seguintes extensões de arquivo:
 
-📁 Extensão	📂 Pasta Destino
-.jpeg	jpeg
-.jpg	jpg
-.png	png
-.pdf	pdf
-.mp4	mp4
-.mkv	mkv
-.exe	exe
-.msi	msi
-.rar	rar
-.epub	epub
-.zip	zip
-.7z	7z
-.iso	iso
-.webm	webm
-.m4a	m4a
-.mp3	mp3
-.wmv	wmv
-.avi	avi
-.txt	txt
-.efu	efu
-.torrent	torrent
-.xls	xls
-.ods	ods
-.odt	odt
-.doc	doc
-.docx	docx
-.py	py
-.html	html
-.md	md
-.json	json
-.yaml	yaml
-.csv	csv
-
-
 🛠️ Tecnologias Utilizadas
-
 
 Python 🐍: A linguagem de programação utilizada para desenvolver o script.
 OS Module 📂: Utilizado para interagir com o sistema operacional.
 Shutil Module 🛠️: Utilizado para operações de arquivo e diretório.
+
+
